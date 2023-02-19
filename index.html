@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard</title>
+    <link rel="stylesheet" href="Css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css'>
+</head>
+<body>
+<section class="sec1">
+    <div class="mbox">
+        <div class="mbox1">
+            <h1>HOME</h1>
+            <p id="countHome">0</p>
+            <div>
+                <button id="btn-add" onclick="increment1()">+1</button>
+                <button id="btn-add" onclick="increment2()">+2</button>
+                <button id="btn-add" onclick="increment3()">+3</button>
+            </div>
+        </div>
+        <div class="mbox1">
+            <h1>GUEST</h1>
+            <p id="countGuest">0</p>
+            <div>
+                <button id="btn-add" onclick="incrementG1()">+1</button>
+                <button id="btn-add" onclick="incrementG2()">+2</button>
+                <button id="btn-add" onclick="incrementG3()">+3</button>
+            </div>
+            <div>
+                <button id="btn-add" onclick="reset()"><i class="fas fa-undo"></i></button>
+                <button id="addRow"><i class="fas fa-save"></i></button>               
+            </div>
+        </div>
+    </div>
+</section>
+<script src="Js\new.js"></script>
+<script src='https://code.jquery.com/jquery-1.12.3.js'></script>
+<script src='https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js'></script>    
+</body>
+</html>
